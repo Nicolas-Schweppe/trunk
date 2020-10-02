@@ -11,6 +11,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>Login</title>
+    
 </head>
 <body>
 <div style="background-color:  #2F2C29">
@@ -24,15 +25,28 @@
 </br>
 
   </br>  </br>
-
+  
 
     <!-- Login Form -->
-    <form>
-      <input type="text" id="usuario" class="fadeIn second" name="usuario" placeholder="Usuario">
-      <input type="text" id="contraseña" class="fadeIn third" name="contraseña" placeholder="Contraseña"></br>
+    <form method="POST" action="{{route('login')}}">
+      @csrf 
+     
+      <input type="email" id="email"  class="fadeIn second "  name="email" required value="{{old('email')}}" placeholder="Email">
+   
+      <input type="password" id="password"  class="fadeIn third" name="password"  required placeholder="Contraseña"></br>
     </br>
-      <input type="submit" class="fadeIn fourth" value="Entrar">
+      <button type="submit" class="fadeIn fourth" value="Entrar">Entrar</button>
     </form>
+
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <span>
+            @foreach ($errors->all() as $error)
+                <span>{{ $error }}</span>
+            @endforeach
+        </span>
+    </div>
+    @endif
 
 
     <!-- Remind Passowrd -->
@@ -42,5 +56,6 @@
 
   </div>
 </div>
+
 </body>
 </html>
