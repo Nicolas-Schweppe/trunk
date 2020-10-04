@@ -28,14 +28,14 @@ class ControladorUsuario extends Controller
             $password=$request->get('password');
             
             if(password_verify($password,$hashp)){
-                return view('welcome');
+                return view('inicio');
             }else{
                
                 return back()->withErrors(['password'=>'Contraseña incorrecta'])->withInput([request('password')]);
             }
         }else{
             
-            return back()->withErrors(['email'=>'Email incorrecto'])->withInput([request('email')]); 
+            return back()->withErrors(['email'=>'Correo electronico incorrecto'])->withInput([request('email')]); 
         }
     }
 }

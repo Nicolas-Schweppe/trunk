@@ -19,19 +19,13 @@
 
 <div class="wrapper fadeInDown">
   <div id="formContent">
-    <!-- Tabs Titles -->
-
-    <!-- Icon -->
 </br>
-
   </br>  </br>
   
-
-    <!-- Login Form -->
     <form method="POST" action="{{route('login')}}">
       @csrf 
      
-      <input type="email" id="email"  class="fadeIn second "  name="email" required value="{{old('email')}}" placeholder="Email">
+      <input type="email" id="email"  class="fadeIn second "  name="email" required value="{{old('email')}}" placeholder="Correo electronico">
    
       <input type="password" id="password"  class="fadeIn third" name="password"  required placeholder="Contraseña"></br>
     </br>

@@ -8,6 +8,7 @@ Route::get('/','ControladorVistas@login');
 
 Auth::routes();
 
+Route::get('/inicio','ControladorVistas@inicio');
 
 Route::post('/','ControladorUsuario@validacion')->name('login');
 

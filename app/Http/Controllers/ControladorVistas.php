@@ -15,5 +15,8 @@ class ControladorVistas extends Controller
       return view('login');
     }
 
+    public function inicio(){
+      return view('inicio');
+    }
 
 }
