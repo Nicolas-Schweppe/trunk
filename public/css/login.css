@@ -1,13 +1,19 @@
 html {
-    background-color: #2F2C29;
+    
   }
 
   body {
     font-family: "Poppins", sans-serif;
-
+    
 
   }
-
+  .fondo{
+    background-image: url('../img/lespaul.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+  }
   a {
     color: ##2F2C29;
     display:inline-block;
@@ -43,7 +49,7 @@ html {
   #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    background: #fff;
+    background: #f6f6f657;
     padding: 30px;
     width: 90%;
     max-width: 450px;
@@ -55,8 +61,8 @@ html {
   }
 
   #formFooter {
-    background-color: #f6f6f6;
-    border-top: 1px solid #dce8f1;
+    background-color: #f6f6f628;
+    border-top: 1px solid #f6f6f628;
     padding: 25px;
     text-align: center;
     -webkit-border-radius: 0 0 10px 10px;
@@ -80,7 +86,7 @@ html {
   /* FORM TYPOGRAPHY*/
 
   button[type=button], button[type=submit], button[type=reset]  {
-    background-color: #FF6C00;
+    background-color: #ff6a0083;
     border: none;
     color: white;
     padding: 18px 100px;

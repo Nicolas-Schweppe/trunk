@@ -28,7 +28,8 @@ class ControladorUsuario extends Controller
             $password=$request->get('password');
             
             if(password_verify($password,$hashp)){
-                return view('inicio');
+                //return view('inicio');
+                return redirect('/inicio');
             }else{
                
                 return back()->withErrors(['password'=>'Contraseña incorrecta'])->withInput([request('password')]);

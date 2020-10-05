@@ -3,25 +3,28 @@
   
 <head>
   
-  <title>Ver Archivos</title>
+  <title>inicio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="/css/subtitulos.css" media="all">
   <link rel="stylesheet" type="text/css" href="/css/footer.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/datatable.min.css"/>
-
+  
+  <link rel="stylesheet" type="text/css" href="/css/inicio.css" media="all">
+  
 </head>
 
-<body style="background-color:  #2F2C29">
+<body class="fondo">
 
 <nav class="p-1 mb-2 bg-primary text-white" >
   <div class="container-fluid">
     <div class="focus">
-      <a class="navbar-brand" href="">Inicio</a>
-      <a class="navbar-brand" href="">Categorias</a>
+      <a class="navbar-brand" href="{{route('inicio')}}">Inicio</a>
+      <a class="navbar-brand" href="{{route('categorias')}}"">Categorias</a>
       <a class="navbar-brand" href="">artistas</a>
       <a class="navbar-brand" href="">Canciones</a>
+
     
     
   <ul class="nav navbar-nav navbar-right">
@@ -46,13 +49,13 @@
 </div>
 </nav>
 <div class="container">
-
+  
   @yield('pagina')
-
+  
 </div>
 <div class="pie">
   <footer>
-    <img src="imagenes/vialidad.png"  >
+    <img src="">
   </footer> 
 </div>
 </body>

@@ -5,7 +5,7 @@
     animation-name:zoomIn  ;
     animation-duration: 2s;
   }
-
+  
   @keyframes zoomIn {
     from {
       opacity: 0;
@@ -25,11 +25,11 @@
   .focus a{
     
   transition: background-color .5s;
-   color:#ffffff;
+   color:#fdfdfdaf;
   }
   a:hover {
     
-    color:#ffcca7;
+    color:#ffae00;
   }
  
   

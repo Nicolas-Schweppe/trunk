@@ -13,8 +13,8 @@
     <title>Login</title>
     
 </head>
-<body>
-<div style="background-color:  #2F2C29">
+<body  class="fondo">
+  
 
 
 <div class="wrapper fadeInDown">
@@ -49,7 +49,6 @@
     </div>
 
   </div>
-</div>
-
+  
 </body>
 </html>

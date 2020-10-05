@@ -16,7 +16,12 @@ class ControladorVistas extends Controller
     }
 
     public function inicio(){
-      return view('inicio');
+      $vista= "1";
+      return view('inicio')->with('vista', $vista);
+    }
+    public function categorias(){
+      $vista= "2";
+      return view('categorias')->with('vista', $vista);
     }
 
 }

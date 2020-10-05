@@ -3,8 +3,9 @@
 @section('pagina')
 <div class="">
     
-    <h1>inicio</h1>
-    
+    <h1>categorias</h1>
+    {{$vista}}
+   
     
 </div>   
 @endsection
