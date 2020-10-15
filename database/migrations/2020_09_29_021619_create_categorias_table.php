@@ -17,6 +17,7 @@ class CreateCategoriasTable extends Migration
             $table->bigIncrements('idCategoria',4);
             $table->string('nombre',25);
             $table->integer('idUsuarios');
+            $table->integer('usoCategoria');
             $table->timestamps();
         });
     }

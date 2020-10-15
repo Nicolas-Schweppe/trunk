@@ -17,6 +17,7 @@ class CreateArtistasTable extends Migration
             $table->bigIncrements('id');
             $table->string('nombre');
             $table->integer('idCategorias');
+            $table->integer('usoArtisatas');
             $table->timestamps();
         });
     }
